@@ -20,10 +20,14 @@ docker-basic/ │ ├──app└── main.py ├── Dockerfile ├──RE
    install requirements
 
 
-2. Build a Docker image 
+2. Build a Docker image : 
+   ```bash
    docker build -t <your_image_name> .
 
-3. Run the fastapi application in docker
+3. Run the fastapi application in docker : 
+   ```bash
    docker run --name <your_container_name> -p 8000:8000 <your_image_name>
 
-
+4. run the application at : 
+   ```bash
+   http://localhost:8000
